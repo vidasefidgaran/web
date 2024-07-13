@@ -1,0 +1,48 @@
+.dashboard-table > div > table > thead > tr :first-child {
+  /* border-radius: none !important; */
+  /* background-color: blue; */
+}
+
+.dashboard-table .first\:rounded-l-lg:first-child {
+  border-radius: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+}
+.dashboard-table .last\:rounded-r-lg:last-child {
+  border-radius: 0px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.dashboard-table
+  .group[data-first="true"]
+  .group-data-\[first\=true\]\:first\:before\:rounded-tl-lg:first-child::before {
+  content: var(--tw-content);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 0px;
+}
+
+.dashboard-table
+  .group[data-first="true"]
+  .group-data-\[first\=true\]\:first\:before\:rounded-tl-lg:last-child::before {
+  content: var(--tw-content);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 0px;
+}
+
+.dashboard-table
+  .group[data-last="true"]
+  .group-data-\[last\=true\]\:first\:before\:rounded-bl-lg:first-child::before {
+  content: var(--tw-content);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 0px;
+}
+
+.dashboard-table
+  .group[data-last="true"]
+  .group-data-\[last\=true\]\:last\:before\:rounded-br-lg:last-child::before {
+  content: var(--tw-content);
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 10px;
+}

@@ -1,0 +1,26 @@
+.step-item {
+  @apply relative flex flex-col justify-center items-center   w-full;
+}
+.step-item:not(:first-child)::before {
+  @apply content-[""]  bg-primary-50/70 absolute left-[50%] w-full h-[3px] top-1/3 -translate-y-2/4;
+}
+
+.step {
+  @apply w-10 h-10 flex z-10 relative bg-primary-50   items-center justify-center  rounded-full font-semibold  text-white;
+}
+.active .step {
+  @apply bg-primary-400;
+}
+.complete .step {
+  @apply bg-green-500;
+}
+.complete:not(:first-child)::before,
+.active:not(:first-child)::before {
+  @apply bg-green-500;
+}
+.complete .step-name {
+  @apply text-primary-600 font-bold;
+}
+.active .step-name {
+  @apply font-extrabold text-gray-500;
+}

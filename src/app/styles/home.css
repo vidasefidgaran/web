@@ -1,0 +1,19 @@
+.main-container {
+  height: 100vh;
+}
+.section-two {
+  height: calc(100vh - 350px);
+  margin-bottom: 120px;
+}
+@media (min-width: 640px) {
+  .section-two {
+    height: calc(100vh - 300px);
+    margin-bottom: 10px;
+  }
+}
+.bg-gradient {
+  background-image: url("../../../public/images/Backgroud.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

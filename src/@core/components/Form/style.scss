@@ -1,0 +1,51 @@
+@import "@/src/app/styles/variables";
+.form-field {
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  border: 1.5px solid #ddd;
+  padding: 12px;
+  position: relative;
+  overflow: visible !important;
+
+  svg {
+    path {
+      fill: $text-secondary;
+    }
+  }
+  &.error {
+    border: 1.5px solid $primary-color;
+  }
+  input {
+    width: 100%;
+    &::placeholder {
+      font-size: 14px;
+      color: $text-secondary;
+      @media (max-width: 1024px) {
+        font-size: 12px;
+      }
+    }
+    border: unset;
+    outline: unset;
+  }
+  .label {
+    position: absolute;
+    top: -18px;
+    left: 20px;
+    background-color: $text-white;
+    padding: 8px;
+    font-size: 13px;
+    color: $text-secondary;
+    z-index: 10;
+    @media (max-width: 1024px) {
+      font-size: 12px;
+    }
+    &.error {
+      color: $primary-color;
+    }
+  }
+  .error-message {
+    color: $primary-color;
+    font-size: 10px;
+  }
+}

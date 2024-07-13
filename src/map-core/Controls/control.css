@@ -1,0 +1,47 @@
+.mousePosition {
+  position: absolute;
+  z-index: 1;
+  bottom: 80px;
+  left: 10px;
+
+  text-align: center;
+}
+
+.measure {
+  position: absolute;
+  z-index: 1;
+  margin-left: 21em;
+}
+
+tr {
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #0f0;
+}
+
+.zoomToExtent {
+  position: absolute;
+  z-index: 1;
+  top: 15%;
+  margin-left: 0.5em;
+}
+.precision {
+  background: transparent;
+  border: 1px #0f0;
+  border-radius: 4px;
+}
+.control-container {
+  border-radius: 16px 16px 0px 0px;
+  bottom: 0px;
+  height: 120px;
+}
+.control-close-button {
+  position: absolute;
+  top: -20px;
+}
+.locate {
+  top: 6em;
+  left: 0.5em;
+}

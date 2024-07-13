@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/redux/features/auth/authSlice.js",
+    "src/redux/api/apiSlice.js",
+    "src/redux/features/auth/authApiSlice.js",
+    "src/@core/components/Form/Login/index.jsx",
+    "src/context/AuthContext.jsx",
+    "src/@core/components/QrScanner/index.jsx",
+    "src/components/Map/index.jsx",
+    "src/store/mapStore.jsx",
+    "src/lib/axios/usePrivateAxios.jsx",
+    "src/@core/components/appInitializer/AppInitializer.tsx",
+    "src/@core/components/Form/FormField/Select.tsx",
+    "src/@core/components/appInitializer/AdminInitializer.tsx",
+    "src/map-core/components/listing/index.jsx",
+    "src/map-core/Controls/Print.js"
+, "src/@core/components/Tabale/MyTable.jsx", "src/@core/components/Tabale/SearchTable.jsx"  ],
+  "exclude": ["node_modules"]
+}

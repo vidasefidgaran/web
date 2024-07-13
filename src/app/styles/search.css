@@ -1,0 +1,19 @@
+.search-section {
+  height: calc(100vh - 230px);
+  bottom: 55px;
+}
+@media (min-width: 350px) {
+  .nosazi-input {
+    width: 40px;
+  }
+}
+@media (min-width: 400px) {
+  .nosazi-input {
+    width: 45px;
+  }
+}
+@media (min-width: 500px) {
+  .nosazi-input {
+    width: 60px;
+  }
+}

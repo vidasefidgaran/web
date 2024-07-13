@@ -1,0 +1,16 @@
+.controller-tab {
+  background-color: #383b4d;
+}
+.controller-open {
+  width: 250px;
+}
+
+@media (max-width: 500px) {
+  .controller {
+    position: absolute;
+    left: 30px;
+  }
+}
+.tab-panel {
+  background-color: #0abf7d;
+}
